@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*Tipo de letra*/
+    margin: 0; /*Quita los márgenes*/
+    line-height: 2; /*Espacio entre líneas*/
+    background-color: #f4f4f4; /*Color de fondo claro*/
+    color: #000000; /*Color del texto negro*/
+}
+
+header,
+footer {
+    background-color: #222; /*Fondo oscuro*/
+    color: white; /*Texto blanco*/
+    text-align: center; /*Centrar todo el texto*/
+    padding: 10px; /*Espacio dentro de la caja para que no quede pegado*/
+}
+
+nav a {
+    color: white; /*Enlaces blancos*/
+    text-decoration: none; /*Quitamos el subrayado*/
+    margin: 0 10px; /*Espacio entre los enlaces*/
+}
+
+nav a:hover {
+    text-decoration: underline; /*Subrayado cuando pasamos el ratón*/
+}
+
+main {
+    max-width: 900px; /*Ancho máximo*/
+    margin: auto; /*Centrar main*/
+    padding: 10px; /*Espacio dentro de main*/
+    background: white; /*Fondo blanco*/
+}
+
+.recursos {
+    margin: 20px 0; /*Separación arriba y abajo*/
+}
+
+.recursos li {
+    margin-bottom: 10px; /*Espacio entre cada enlace*/
+}
+
+.recursos a {
+    color: #0066cc; /*Color azul para enlaces*/
+    text-decoration: none; /*Quitar subrayado*/
+}
+
+.recursos a:hover {
+    text-decoration: underline; /*Subrayado al pasar el ratón*/
+}
+
+.video {
+    text-align: center; /*Centrar video*/
+    margin-top: 30px; /*Separación con la sección de arriba*/
+}
+
+.video video {
+    border-radius: 10px; /*Bordes redondeados*/
+}
+
+.video video:hover {
+    transform: scale(1.05); /*Efecto zoom al pasar el ratón*/
+    cursor: pointer; /*Cambia el cursor a mano*/
+}
+
+@media (max-width: 400px) {
+    * {
+        color: aqua; /*Cambiamos color de todo el texto en pantallas pequeñas*/
+    }
+
+    .video video {
+        width: 100%; /*Que el video se adapte al ancho de la pantalla*/
+        max-width: 300px; /*Que no sea demasiado grande*/
+    }
+}

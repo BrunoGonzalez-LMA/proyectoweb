@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*Tipo de letra*/
+    margin: 0; /*Quita el margen por defecto*/
+    background-color: #f4f4f4; /*Fondo gris clarito*/
+    color: #000000; /*Texto negro*/
+}
+
+header, footer {
+    background-color: #222; /*Fondo oscuro para cabecera y pie*/
+    color: white; /*Texto blanco */
+    text-align: center; /*Centrar todo el texto */
+    padding: 10px; /*Espacio dentro del header y footer*/
+}
+
+nav a {
+    color: white; /*Color blanco para los enlaces*/
+    text-decoration: none; /*Quita el subrayado por defecto*/
+    margin: 0 10px; /*Separación entre enlaces*/
+}
+
+nav a:hover {
+    text-decoration: underline; /*Subrayado al pasar el ratón */
+}
+
+main {
+    max-width: 900px; /*Ancho máximo para que no se vea gigante en pantalla grande */
+    margin: auto; /*Centra el contenido horizontalmente*/
+    background-color: rgb(252, 236, 236); /*Fondo blanco para resaltar los pasos*/
+    padding: 20px; /*Espacio dentro del main */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /*Sombra suave para que se vea bonito*/
+}
+
+.introduccion, .paso {
+    margin-bottom: 30px; /*Separación entre secciones*/
+}
+
+.paso h2 {
+    color: #00ff11; /*Color de título de cada paso*/
+}
+
+.paso img {
+    display: block; /*Cada imagen en una línea*/
+    margin: 10px auto; /*Centrar la imagen y separarla un poco del texto*/
+    max-width: 90%; /*Que no se salga de la pantalla*/
+    border: 2px solid #ccc; /*Bordecito gris*/
+    border-radius: 5px; /*Bordes redondeados*/
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 10px; /*Menos padding en móviles*/
+    }
+    .paso img {
+        max-width: 100%; /*La imagen ocupará todo el ancho posible en móviles*/
+    }
+}

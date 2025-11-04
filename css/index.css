@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;/*Tipo de letra para el body*/
+    margin: 0;/*Quita los márgenes*/
+    line-height: 2.5;/*La separación entre las líneas del body*/
+    background-color: #f4f4f4;/*El color de fondo del body*/
+    color: #000000;/*El color de la letra del body*/
+}
+
+header,
+footer {
+    background-color: #222;/*Con este color de fondo destaco la cabecera*/
+    color: white;/*El color de la letra*/
+    text-align: center;/*Alineamos todo al centro para que quede centrado y bonito*/
+    padding: 1px;/*Ajustamos el espaciado del contenido*/
+}
+
+nav a {
+    color: white;/*Este sería el menú de navegación, en este campo se define el color blanco de su letra*/
+    text-decoration: none;/*esto sirve para quitarle el subrayado por defecto*/
+    margin: 0 10px;/*Se modifica el espaciado horizontal entre enlaces*/
+}
+
+nav a:hover {
+    text-decoration: underline;/*Esto sirve para que al pasar el ratón por encima de los enlaces, aparezca el subrayado que he desactivado antes*/
+}
+
+main {
+    max-width: 900px;/*Limita el ancho del contenido*/
+    margin: auto;/*Margen automático para centrar el contenido*/
+    padding: 1px;/*Ajustamos el espaciado del contenido*/
+    background: white;/*El color de fondo del main o contenido*/
+}
+
+.imagenes {
+    display: flex;/*Activa Flexbox*/
+    justify-content: center;/*Centra horizontalmente las imágenes*/
+    gap: 30px;/*Espacio entre imágenes*/
+    margin: 20px 0;/*Margen superior e inferior para separar del resto del contenido*/
+}
+
+.guia {
+    text-align: center;/*Centra el texto dentro de la sección*/
+    margin-top: 40px;
+}
+
+.guia a img {
+    border: 2px solid #333;/*Borde oscuro alrededor de la imagen contenido*/
+    border-radius: 10px;/*Bordes redondeados para suavizar la imagen*/
+}
+
+.guia a img:hover {
+    transform: scale(1.2);/*Aumenta el tamaño al pasar el ratón por encima*/
+    cursor: pointer;/*Cambia el cursor al de una mano para que se intuya que se puede hacer click en la imagen*/
+}
+
+@media (max-width <=400px) {
+    * {
+        color: aqua;/*Cambia el color de todo el texto a azul claro cuando la pantalla es menos de 400px mediante media query.*/
+    }
+     .imagenes {
+        flex-direction: column; /*Pone las imágenes una debajo de otra, en columna*/
+        gap: 15px;
+    }
+
+    .guia a img {
+        width: 100%; /*Hace que la imagen se adapte al ancho de la pantalla*/
+        max-width: 300px; /*El máximo de píxeles que puede ocupar la imagen*/
+    }
+}

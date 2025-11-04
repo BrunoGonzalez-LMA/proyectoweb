@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /*Tipo de letra*/
+    margin: 0; /*Quita los márgenes por defecto del body*/
+    background-color: #f4f4f4; /*Fondo gris claro*/
+    color: #000000; /*Texto negro por defecto*/
+}
+
+header, footer {
+    background-color: #222; /*Fondo oscuro para header y footer*/
+    color: white; /*Texto blanco*/
+    text-align: center; /*Centro todo el texto*/
+    padding: 10px; /*Espaciado interno*/
+}
+
+nav a {
+    color: white; /*Color blanco para los enlaces*/
+    text-decoration: none; /*Quita subrayado de los enlaces*/
+    margin: 0 10px; /*Espaciado horizontal entre enlaces*/
+}
+
+nav a:hover {
+    text-decoration: underline; /*Subrayado al pasar el ratón*/
+}
+
+main {
+    max-width: 800px; /*Ancho máximo para que no se estire demasiado*/
+    margin: auto; /*Centro el main*/
+    background-color: white; /*Fondo blanco para resaltar el contenido*/
+    padding: 20px; /*Espaciado interno*/
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /*Sombra suave*/
+}
+
+.formulario h2 {
+    text-align: center; /*Centrar título h2*/
+}
+
+form {
+    display: block; /*Forma por defecto*/
+    margin-top: 20px; /*Separación del título*/
+}
+
+label {
+    font-weight: bold; /*Negrita para distinguir los nombres de las etiquetas*/
+}
+
+input[type="text"],/*al poner los inputs de texto y de email entre comas, se aplicarán las reglas que se definan dentro de las comillas de abajo*/
+input[type="email"],
+textarea {
+    width: 100%; /*Ocupa todo el ancho disponible*/
+    padding: 5px; /*Espaciado interno dentro de los campos*/
+    margin-top: 5px; /*Separación entre el nombre de la etiqueta y el campo*/
+    margin-bottom: 15px; /*Separación entre campos*/
+    border: 1px solid #ccc; /*Bordecito gris simple*/
+    border-radius: 5px; /*Bordes redondeados para que se vea bonito*/
+}
+
+
+input[type="submit"] { /*Botón de enviar*/
+    background-color: #222; /*Mismo color del header*/
+    color: white; /*Texto blanco*/
+    padding: 10px 20px; /*Espaciado dentro del botón*/
+    border: none; /*Quita borde por defecto*/
+    border-radius: 5px; /*Bordes redondeados*/
+    cursor: pointer; /*Cambio de cursor para indicar que es clicable*/
+}
+
+input[type="submit"]:hover {
+    background-color: #444; /*Oscurece un poco al pasar el ratón por encima*/
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 10px; /*Menos padding para móviles*/
+    }
+}

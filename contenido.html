@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía</title>
+    <link rel="stylesheet" href="css/contenido.css">
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Instalación Dual Windows y Linux</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="introduccion">
+            <h2>Introducción</h2>
+            <p>En esta web, el procedimiento se realizará utilizando un equipo portátil real, antiguo. <br>De esta
+                manera, si existiera algún problema en la instalación, no se ponen en riesgo los datos del usuario.</p>
+        </section>
+        <section class="paso">
+            <h2>Paso 1: Preparar el disco</h2>
+            <p>
+                Abrir la administración de discos de Windows y crear una partición libre para Ubuntu. La haré de 50GB.
+            </p>
+            <img src="imagenes/1.jpg" alt="partición hecha" width="500px">
+        </section>
+        <section class="paso">
+            <h2>Paso 2: Crear USB de arranque con VENTOY</h2>
+            <p>En otro equipo, descargamos y utilizamos Ventoy para crear un USB de arranque y copiar la ISO de
+                Ubuntu.<br>Para descargar Ventoy y la ISO oficial de Ubuntu, los enlaces estarán en la página de
+                recursos.</p>
+            <img src="imagenes/2.jpg" alt="ventoy descargado y ejecutado" width="400px">
+            <p>Una vez abierto Ventoy, introducimos una memoria USB vacía, con más de 8GB de capacidad y le damos click
+                en <strong>INSTALL</strong>.</p>
+            <img src="imagenes/3.png" alt="USB arrancable con iso de ubuntu" width="600px">
+            <p>Ya tenemos la memoria USB lista para ser arrancable y con la ISO de Ubuntu 24.</p>
+        </section>
+        <section class="paso">
+            <h2>Paso 3: Iniciar a través de la memoria USB</h2>
+            <p>En este caso, en Hp, la tecla para abrir el Boot Menu será F9. Elegiremos la opción de iniciar mediante
+                el USB con Ventoy.</p>
+            <img src="imagenes/4.jpg" alt="elegimos usb arrancable" width="400px"><br>
+            <img src="imagenes/5.jpg" alt="elegimos la iso" width="400px">
+            <p>Presionamos <strong>intro</strong> y después seleccionamos la opción <strong>"boot in normal
+                    mode"</strong>.</p>
+            <img src="imagenes/6.jpg" alt="grub" width="400px">
+            <p>Inicia el GRUB de ubuntu, seleccionamos la opción 1.</p>
+        </section>
+        <section class="paso">
+            <h2>Paso 4: Instalación de Ubuntu</h2>
+            <p>Seleccionamos idioma, teclado y configuraciones al gusto, hasta llegar al apartado de Configuración de
+                disco.<br>Donde seleccionaremos Instalar Ubuntu junto a Windows.<br>Siguiente.</p>
+            <img src="imagenes/7.jpg" alt="elegimos instalar junto a windows" width="400px"><br>
+            <img src="imagenes/8.jpg" alt="creacion del usuario" width="400px">
+            <p>Creamos nuestro usuario local de ubuntu. Luego pedirá elegir huso horario y al final, clicamos en
+                instalar.</p>
+            <p>Al finalizar, daremos click a reiniciar ahora y retiramos el USB.</p>
+        </section>
+        <section class="paso">
+            <h2>Paso 5: Comprobamos la instalación</h2>
+            <p>Debemos asegurarnos que en el orden de inicio, la opción "Ubuntu" sea la primera o esté por defecto.</p>
+            <p>Probamos a encender el equipo y arrancará el grub, donde elegimos el SO que queremos arrancar y listo.
+            </p>
+            <img src="imagenes/9.jpg" alt="inicio de grub" width="400px">
+            <p>Podremos ahora elegir cada vez que encendamos el equipo, si queremos ejecutar windows 11 o
+                ubuntu.<br>Ubuntu queda instalado en la partición sin formato que creamos al principio.</p>
+            <img src="imagenes/10.jpg" alt="windows 11" width="400px">
+            <img src="imagenes/11.jpg" alt="ubuntu" width="400px">
+        </section>
+    </main>
+    <footer>
+        <p>© Copyright 2025 Material e imágenes desarrollados por Bruno González Arredondo.</p>
+    </footer>
+</body>
+
+</html>
